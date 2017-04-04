@@ -223,7 +223,7 @@ void draw_detections(image im, int num, float thresh, box *boxes, float **probs,
                 draw_label(im, top + width, left, label, rgb);
             }
 
-            printf("box:%s,%d,%d,%d,%d\n", names[class], left, right, top, bot);
+            printf("box:%s,%d,%d,%d,%d,%.0f\n", names[class], left, right, top, bot, prob*100);
         }
     }
 }
